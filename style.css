@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 100vh;
+    background-image:url(./img/removal_pics.png);
+    background-repeat: no-repeat;
+    background-position: 60vw;
+    background-size: 60vh 100vh;
+    box-shadow: 0 1px 4px rgba(8, 80, 189, 0.37); /* bottom border shadow header */
+}
+.vertical_menu{
+    position: absolute;
+    margin-top: 20vh;
+}
+.list_menu{
+    position: fixed;
+    list-style-type: none;
+    padding-left: 20px;
+}
+.menu_mouse{
+    background-color: rgb(237, 235, 235);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family:'Bebas Neue', sans-serif;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: 0.2s ease-in;
+    margin-bottom: 1rem;
+}
+.menu_mouse span{
+    margin-left: 26px;
+    
+}
+.menu_mouse:hover{
+    width: 7rem;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(11, 107, 162);
+}
+/* Style header text + social & pro link */ 
+.background_text_header{
+    padding-top: 30vh;
+    margin-left: 25vh;
+}
+.title_header{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+.text_header{
+    font-family: 'Raleway', sans-serif;
+    
+    display: flex;
+    font-size: 20px;
+    margin-top: -2rem;
+    font-weight: bold;
+}
+.text_typing{
+    color: rgb(11, 107, 162);
+    font-style: oblique;
+}
+/* style link icons social network */
+.list_style{
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+}
+.list_style li:not(:first-child){
+    margin-left: 30px;
+}
+
+.list_style svg:hover{
+    fill: rgb(11, 107, 162);
+} 
+
+/* style section Portrait & story*/
+
+.ma_section{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    user-select: none;
+    height: 80vh;
+}
+.textual_description{
+    margin-left: 50px;
+}
+.text_dev{
+    display: flex;
+    justify-content:center;
+
+}
+.pic_sebastien{
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    box-shadow: 2px 2px 2px black;
+}
+.main_job{
+    color: rgb(11, 107, 162);
+    font-size: 25px;
+    text-align: center;
+}
+
+/* style section skills */
+.skills{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    user-select: none;
+}
+.table_skills{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: start;
+}
+.progress_bar{
+    width: 30vw;
+    height: 1vh;
+    background: rgb(11, 107, 162);
+}
+.student{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    user-select: none;
+    height: 60vh;
+}
+.listing_xp_stud{
+    display: flex;
+    justify-content: space-evenly;
+}
+.list_student{
+    width: 30vw;
+    border-left:  5px double rgb(11, 107, 162);
+}
+.list_experience::before{
+    content: "";
+    left: 55vw;
+    background:white;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(168, 14, 14);
+    border-radius: 40%;
+    position: absolute;
+}
+.list_experience{
+    width: 30vw;
+    border-left:  5px double rgb(11, 107, 162);
+    
+}
+/* Style portfolio section */
+.portfolio{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+    height: 100vh;
+}
+.menu_portfolio ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+.menu_portfolio li:not(:first-child){
+    margin-left: 1rem;
+}
+.menu_portfolio a,.menu_portfolio li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: 1s;
+    user-select: none;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.nav_portfolio a:hover{
+    color: rgb(8, 159, 247);
+    transition: 0.5s;
+  
+}
+.pic_all img{ /* Mettre de l'effet, une selection et un effet d'hover */
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+/* Style form section */
+.order_contact{
+    display: flex;
+    margin-left: 8vw;
+}
+.txt_contact{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.menu_icons{
+    background-color: rgb(225, 245, 252);
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Bebas Neue', sans-serif;
+    overflow: hidden;
+    border-radius: 40px;
+    transition: 0.2s ease-in;
+}
+.icons_list p{
+    font-family:'Bebas Neue', sans-serif;
+    font-size:18px ;
+    color:rgb(11, 107, 162);
+    margin: 0;
+    margin-bottom: 5px;
+}
+.menu_icons:hover{
+    background-color: rgba(225, 245, 252, 0.459);
+}
+.icons_list{
+    list-style-type: none;
+    margin-top: 0;
+}
+/* form style */
+.contact_me{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    text-align: start;
+    height: 60vh;
+    margin-left: 5vw;
+}
+.name_mail{
+    display: flex;
+    margin-bottom: 20px;
+}
+.form_msg{
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+}
+
+#name, #mail{
+    width: 303px;
+    height: 40px;
+    border: 0.5px solid rgba(128, 128, 128, 0.908);
+}
+#msg{
+    border: 0.5px solid rgba(128, 128, 128, 0.908);
+}
+#objet{
+    width: 615px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 0.5px solid rgba(128, 128, 128, 0.908);
+}
+.button_form{
+   margin-top: 10px;
+   margin-left: 215px;
+   color: white;
+   background:rgb(11, 107, 162);
+   border-radius: 40px;
+   border: 0;
+   width: 200px;
+   height: 40px;
+}
