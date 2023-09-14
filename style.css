@@ -1,21 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+@keyframes lighting {
+    to { color: white;
+    }
+    100%{ color: rgba(8, 80, 189, 0.37);        
+    }
+}
 html{
     scroll-behavior: smooth;
 }
-body {
+body, html {
     margin: 0;
     padding: 0;
 }
-
 header{
+    background-color: red;
+    padding: 0;
+    margin: 0;
     height: 100vh;
+    width: 100%;
     background-image:url(./img/removal_pics.png);
     background-repeat: no-repeat;
     background-position: 60vw;
     background-size: 60vh 100vh;
-    box-shadow: 0 1px 4px rgba(8, 80, 189, 0.37); /* bottom border shadow header */
+    box-shadow: 0 1px rgba(8, 80, 189, 0.37); /* bottom border shadow header */
+}
+.btn_responsive_bar{
+    text-align: end;
+    padding-top: 1rem;
+    margin-right: 1rem;
+    display: none;
 }
 .vertical_menu{
     position: absolute;
@@ -25,6 +40,8 @@ header{
     position: fixed;
     list-style-type: none;
     padding-left: 20px;
+    user-select: none;
+
 }
 .menu_mouse{
     background-color: rgb(237, 235, 235);
@@ -48,18 +65,21 @@ header{
     transition: 0.2s ease-in-out;
     background-color: rgb(11, 107, 162);
 }
+.p_bar{
+    animation: lighting 0.5s infinite;
+}
 /* Style header text + social & pro link */ 
 .background_text_header{
     padding-top: 30vh;
     margin-left: 25vh;
+
 }
 .title_header{
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 50px;
 }
 .text_header{
     font-family: 'Raleway', sans-serif;
-    
     display: flex;
     font-size: 20px;
     margin-top: -2rem;
@@ -99,8 +119,8 @@ header{
 .text_dev{
     display: flex;
     justify-content:center;
-
 }
+
 .pic_sebastien{
     width: 350px;
     height: 350px;
@@ -148,7 +168,7 @@ header{
 }
 .list_experience::before{
     content: "";
-    left: 55vw;
+    left: 55.5vw;
     background:white;
     width: 10px;
     height: 10px;
@@ -243,6 +263,7 @@ header{
     font-family: 'Raleway', sans-serif;
     text-align: start;
     height: 60vh;
+    
     margin-left: 5vw;
 }
 .name_mail{
@@ -278,4 +299,56 @@ header{
    border: 0;
    width: 200px;
    height: 40px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1065px) {
+
+.list_menu{
+    display: none;
+}
+.btn_responsive_bar{
+    display: block;
+}
+.order_contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    height: initial;
+    margin: 0;
+}
+.background_text_header{
+    margin-left: 10vh;
+}
+.text_header{
+    display: flex;
+    flex-direction: column;
+}
+.text_header > p{
+    padding: 0;
+    margin: 0;
+}
+.pic_sebastien{
+    width: 10.8rem;
+    height: 10.8rem;
+}
+.text_dev{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.textual_description{
+    margin-left: initial;
+
+}
+.skills{
+    margin-top: 25vh;
+}
+#objet{
+    width: 300px;
+}
+textarea{
+    width: 300px;;
+}
+.button_form{
+    margin-left: initial;
+}
 }
