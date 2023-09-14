@@ -40,7 +40,6 @@ header{
     list-style-type: none;
     padding-left: 20px;
     user-select: none;
-
 }
 .menu_mouse{
     background-color: rgb(237, 235, 235);
@@ -56,8 +55,7 @@ header{
     margin-bottom: 1rem;
 }
 .menu_mouse span{
-    margin-left: 26px;
-    
+    margin-left: 26px; 
 }
 .menu_mouse:hover{
     width: 7rem;
@@ -97,13 +95,10 @@ header{
 .list_style li:not(:first-child){
     margin-left: 30px;
 }
-
 .list_style svg:hover{
     fill: rgb(11, 107, 162);
 } 
-
 /* style section Portrait & story*/
-
 .ma_section{
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -119,7 +114,6 @@ header{
     display: flex;
     justify-content:center;
 }
-
 .pic_sebastien{
     width: 350px;
     height: 350px;
@@ -131,13 +125,13 @@ header{
     font-size: 25px;
     text-align: center;
 }
-
 /* style section skills */
 .skills{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     color: black;
     user-select: none;
+
 }
 .table_skills{
     display: flex;
@@ -145,7 +139,7 @@ header{
     text-align: start;
 }
 .progress_bar{
-    width: 30vw;
+    width: 500px;
     height: 1vh;
     background: rgb(11, 107, 162);
 }
@@ -164,16 +158,6 @@ header{
 .list_student{
     width: 30vw;
     border-left:  5px double rgb(11, 107, 162);
-}
-.list_experience::before{
-    content: "";
-    left: 55.5vw;
-    background:white;
-    width: 10px;
-    height: 10px;
-    border: 2px solid rgb(168, 14, 14);
-    border-radius: 40%;
-    position: absolute;
 }
 .list_experience{
     width: 30vw;
@@ -310,7 +294,6 @@ header{
 }
 header{
     background-position: initial;
-    background-size: vh 20vh;
 }
 .order_contact{
     display: flex;
@@ -348,7 +331,7 @@ header{
 
 }
 .skills{
-    margin-top: 25vh;
+    margin-top: 50vh;
 }
 .portfolio{
     margin-top: 20vh;
@@ -369,3 +352,100 @@ textarea{
     margin-left:initial;
 }
 }
+
+/* BREAKPOINT UNDER 400PX */
+@media screen and (max-width: 360px) {
+
+    .list_menu{
+        display: none;
+    }
+    .btn_responsive_bar{
+        display: block;
+    }
+    header{
+        background-position: initial;
+        background-size: vh 20vh;
+    }
+    .order_contact{
+        display: flex;
+        flex-direction: column;
+        margin-left: 8vw;
+        height: initial;
+        margin: 0;
+    }
+    .background_text_header{
+        margin-left: 3rem;
+    }
+    .title_header{
+        font-size: 2rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+    .text_header{
+        flex-direction: column;
+    }
+    .text_header > p{
+        padding: 0;
+        margin: 0;
+    }
+    .pic_sebastien{
+        width: 10.8rem;
+        height: 10.8rem;
+    }
+    .ma_section{
+        width: 100;
+        margin-left: auto;
+        
+    }
+    .text_dev{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .textual_description{
+        margin-left: initial;
+    
+    }
+    .skills{
+        margin-top: 66vh;
+    }
+    .title_skill{
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .skills  p{
+        font-size: 0.9rem;
+    }
+    .table_skills{
+      display: flex;
+      flex-direction: column;
+  
+    }
+    .table_skills > div{
+        width: 359px;
+        margin-left: 10px;    
+    }
+
+    .portfolio{
+        margin-top: 40vh;
+    }
+    .progress_bar{
+        width: 70vw; 
+    }
+    #objet{
+        width: 300px;
+    }
+    .article_contact{
+        margin-top: 50vh;
+    }
+    .order_contact{
+        align-items:center;
+    }
+    textarea{
+        width: 300px;;
+    }
+    .button_form{
+        margin-left:initial;
+    }
+    }
