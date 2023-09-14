@@ -15,7 +15,6 @@ body, html {
     padding: 0;
 }
 header{
-    background-color: red;
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -309,6 +308,10 @@ header{
 .btn_responsive_bar{
     display: block;
 }
+header{
+    background-position: initial;
+    background-size: vh 20vh;
+}
 .order_contact{
     display: flex;
     flex-direction: column;
@@ -317,7 +320,8 @@ header{
     margin: 0;
 }
 .background_text_header{
-    margin-left: 10vh;
+    margin-left: 13vh;
+
 }
 .text_header{
     display: flex;
