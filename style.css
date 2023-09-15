@@ -73,7 +73,7 @@ header{
 }
 .title_header{
     font-family: 'Raleway', sans-serif;
-    font-size: 50px;
+    font-size: clamp(20px, 3rem, 3rem);
 }
 .text_header{
     font-family: 'Raleway', sans-serif;
@@ -108,7 +108,7 @@ header{
     height: auto;
 }
 .textual_description{
-    margin-left: 50px;
+    text-align: center;
 }
 .text_dev{
     display: flex;
@@ -148,29 +148,40 @@ header{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     color: black;
-    margin-top: 50px;
+    padding-top: 2rem;
     user-select: none;
     height: 60vh;
 }
 .listing_xp_stud{
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 .list_student{
     width: 30vw;
-    border-left:  5px double rgb(11, 107, 162);
+}
+.list_student:nth-child(1n){
+    border-radius: 5px;
+}
+.list_student h3, .list_experience h3{
+    margin: 0;
+    background: rgba(11, 107, 162, 0.158);
+
+}
+.tray{
+    width: 0.2rem;
+    background: rgb(11, 107, 162);
 }
 .list_experience{
     width: 30vw;
-    border-left:  5px double rgb(11, 107, 162);
+  
     
 }
 /* Style portfolio section */
 .portfolio{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    color: black;
-    margin-top: 50px;
+    
 }
 .menu_portfolio ul{
     display: flex;
@@ -302,7 +313,6 @@ header{
     align-items: center;
     height: initial;
     width: 100%;
-
     margin: 0;
 }
 .background_text_header{
@@ -312,7 +322,6 @@ header{
     font-size: 2rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
-
 }
 .text_header > p{
     padding: 0;
@@ -322,13 +331,18 @@ header{
     width: 10.8rem;
     height: 10.8rem;
 }
+.table_skills > div{
+    width: 100%;
+}
 .text_dev{
     display: flex;
     flex-direction: column-reverse;
 }
+.progress_bar{
+    width: 80%;
+}
 .textual_description{
     margin-left: initial;
-
 }
 #objet{
     width: 100%
@@ -356,7 +370,7 @@ textarea{
 }
 }
 
-/*////////////////////////// BREAKPOINT UNDER 400PX ////////////////////////////////////*/
+/*////////////////////////// BREAKPOINT UNDER 360PX ////////////////////////////////////*/
 @media screen and (max-width: 360px) {
 
     .list_menu{
@@ -367,7 +381,6 @@ textarea{
     }
     header{
         background-position: initial;
-        background-size: 20vh;
     }
     .order_contact{
         display: flex;
@@ -408,9 +421,7 @@ textarea{
     .textual_description{
         margin-left: initial;
     
-    }
-    .skills{
-        margin-top: 66vh;
+
     }
     .title_skill{
         font-weight: bold;
@@ -425,6 +436,7 @@ textarea{
       display: flex;
       flex-direction: column;
       text-align: center;  
+      align-items: center;
     }
     .table_skills > div{
         width: 300px;
@@ -435,7 +447,7 @@ textarea{
         margin-top: 40vh;
     }
     .progress_bar{
-        width: 70vw; 
+        width: 50vw; 
     }
     #objet{
         width: 300px;
@@ -443,13 +455,22 @@ textarea{
     .article_contact{
         margin-top: 50vh;
     }
+    
     .order_contact{
         align-items:center;
     }
     textarea{
         width: 300px;;
     }
+    .icons_list{
+        display: flex;
+        flex-direction: column;
+        
+    }
     .button_form{
         margin-left:initial;
+    }
+    .form_msg{
+        width: 19.25rem;
     }
     }
