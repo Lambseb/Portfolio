@@ -371,7 +371,7 @@ textarea{
 }
 
 /*////////////////////////// BREAKPOINT UNDER 360PX ////////////////////////////////////*/
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
 
     .list_menu{
         display: none;
