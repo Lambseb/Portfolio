@@ -370,7 +370,7 @@ textarea{
 }
 }
 
-/*////////////////////////// BREAKPOINT UNDER 360PX ////////////////////////////////////*/
+/*////////////////////////// BREAKPOINT UNDER 500PX ////////////////////////////////////*/
 @media screen and (max-width: 500px) {
 
     .list_menu{
@@ -433,10 +433,10 @@ textarea{
         font-size: 0.9rem;
     }
     .table_skills{
-      display: flex;
-      flex-direction: column;
-      text-align: center;  
-      align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;  
+        align-items: center;
     }
     .table_skills > div{
         width: 300px;
@@ -452,10 +452,6 @@ textarea{
     #objet{
         width: 300px;
     }
-    .article_contact{
-        margin-top: 50vh;
-    }
-    
     .order_contact{
         align-items:center;
     }
