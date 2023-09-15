@@ -7,8 +7,6 @@ responsiveBtn.addEventListener('click', ()=> {
   verticalNav.style.transition ="2s",
   console.log(verticalNav)
 });
-
-
 // script pour écrire visuellement sur  la class "text_typing" 
 //selectionner le text
 
@@ -37,7 +35,6 @@ const options = {
     rootMargin: "0px",
     threshold: ratio
 };
-
 const objectObs = document.querySelectorAll('.slider_class');
 
 function handleIntersect (entries){

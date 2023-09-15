@@ -105,7 +105,7 @@ header{
     color: black;
     margin-top: 50px;
     user-select: none;
-    height: 80vh;
+    height: auto;
 }
 .textual_description{
     margin-left: 50px;
@@ -137,9 +137,10 @@ header{
     display: flex;
     justify-content: space-evenly;
     text-align: start;
+    width: 100%;
 }
 .progress_bar{
-    width: 500px;
+    width: 50%;
     height: 1vh;
     background: rgb(11, 107, 162);
 }
@@ -170,7 +171,6 @@ header{
     text-align: center;
     color: black;
     margin-top: 50px;
-    height: 100vh;
 }
 .menu_portfolio ul{
     display: flex;
@@ -203,7 +203,7 @@ header{
 /* Style form section */
 .order_contact{
     display: flex;
-    margin-left: 8vw;
+    justify-content: center;
 }
 .txt_contact{
     display: flex;
@@ -246,7 +246,6 @@ header{
     font-family: 'Raleway', sans-serif;
     text-align: start;
     height: 60vh;
-    
     margin-left: 5vw;
 }
 .name_mail{
@@ -257,19 +256,22 @@ header{
     display: flex;
     flex-direction: column;
     align-items: start; 
+    width: 38.75rem;
 }
 
 #name, #mail{
     width: 303px;
-    height: 40px;
+    margin-top: 0.5rem;
+    height: 3rem;
     border: 0.5px solid rgba(128, 128, 128, 0.908);
 }
 #msg{
     border: 0.5px solid rgba(128, 128, 128, 0.908);
+    width: 100%;
 }
 #objet{
-    width: 615px;
     height: 40px;
+    width: 100%;
     margin-bottom: 20px;
     border: 0.5px solid rgba(128, 128, 128, 0.908);
 }
@@ -280,11 +282,10 @@ header{
    background:rgb(11, 107, 162);
    border-radius: 40px;
    border: 0;
-   width: 200px;
    height: 40px;
 }
-/* RESPONSIVE */
-@media screen and (max-width: 768px) {
+/* ///////////////////////////////// RESPONSIVE ///////////////////////////////////////////*/
+@media screen and (max-width: 1100px) {
 
 .list_menu{
     display: none;
@@ -293,13 +294,15 @@ header{
     display: block;
 }
 header{
-    background-position: initial;
+    background-position:right
 }
 .order_contact{
     display: flex;
     flex-direction: column;
-    margin-left: 8vw;
+    align-items: center;
     height: initial;
+    width: 100%;
+
     margin: 0;
 }
 .background_text_header{
@@ -309,10 +312,7 @@ header{
     font-size: 2rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
-}
-.text_header{
 
-    flex-direction: column;
 }
 .text_header > p{
     padding: 0;
@@ -330,30 +330,33 @@ header{
     margin-left: initial;
 
 }
-.skills{
-    margin-top: 50vh;
-}
-.portfolio{
-    margin-top: 20vh;
-}
 #objet{
-    width: 300px;
-}
-.article_contact{
-    margin-top: 50vh;
+    width: 100%
 }
 .order_contact{
     align-items:center;
 }
+.icons_list{
+padding-left: 0;
+display: flex;
+align-items: center;
+}
+.contact_me{
+    margin-left: 0;
+}
+.icons_list li{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
 textarea{
-    width: 300px;;
+    width: 300px;
 }
 .button_form{
     margin-left:initial;
 }
 }
 
-/* BREAKPOINT UNDER 400PX */
+/*////////////////////////// BREAKPOINT UNDER 400PX ////////////////////////////////////*/
 @media screen and (max-width: 360px) {
 
     .list_menu{
@@ -364,7 +367,7 @@ textarea{
     }
     header{
         background-position: initial;
-        background-size: vh 20vh;
+        background-size: 20vh;
     }
     .order_contact{
         display: flex;
@@ -393,9 +396,10 @@ textarea{
         height: 10.8rem;
     }
     .ma_section{
-        width: 100;
         margin-left: auto;
-        
+    }
+    .text_top h4{
+    font-size: 0.9rem;
     }
     .text_dev{
         display: flex;
@@ -420,11 +424,11 @@ textarea{
     .table_skills{
       display: flex;
       flex-direction: column;
-  
+      text-align: center;  
     }
     .table_skills > div{
-        width: 359px;
-        margin-left: 10px;    
+        width: 300px;
+        margin-left: 20px;    
     }
 
     .portfolio{
