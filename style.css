@@ -61,6 +61,7 @@ header{
     width: 7rem;
     transition: 0.2s ease-in-out;
     background-color: rgb(11, 107, 162);
+    
 }
 .p_bar{
     animation: lighting 0.5s infinite;
@@ -106,9 +107,12 @@ header{
     margin-top: 50px;
     user-select: none;
     height: auto;
+    font-size: 1.2rem
 }
-.textual_description{
-    text-align: center;
+.textual_description p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-left: 3rem;
 }
 .text_dev{
     display: flex;
@@ -131,17 +135,19 @@ header{
     text-align: center;
     color: black;
     user-select: none;
-
+}
+.title_skill{
+    font-weight: bold;
 }
 .table_skills{
     display: flex;
     justify-content: space-evenly;
-    text-align: start;
+ 
     width: 100%;
+    font-size: 1.2rem;
 }
 .progress_bar{
-    width: 50%;
-    height: 1vh;
+    height: 0.13vh;
     background: rgb(11, 107, 162);
 }
 .student{
@@ -150,7 +156,6 @@ header{
     color: black;
     padding-top: 2rem;
     user-select: none;
-    height: 60vh;
 }
 .listing_xp_stud{
     height: 100%;
@@ -160,13 +165,15 @@ header{
 .list_student{
     width: 30vw;
 }
+.listing_xp_stud  p {
+    font-size: 1.2rem
+}
 .list_student:nth-child(1n){
     border-radius: 5px;
 }
 .list_student h3, .list_experience h3{
     margin: 0;
     background: rgba(11, 107, 162, 0.158);
-
 }
 .tray{
     width: 0.2rem;
@@ -175,13 +182,11 @@ header{
 .list_experience{
     width: 30vw;
   
-    
 }
 /* Style portfolio section */
 .portfolio{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    
 }
 .menu_portfolio ul{
     display: flex;
@@ -204,7 +209,6 @@ header{
 .nav_portfolio a:hover{
     color: rgb(8, 159, 247);
     transition: 0.5s;
-  
 }
 .pic_all img{ /* Mettre de l'effet, une selection et un effet d'hover */
     width: 200px;
@@ -238,7 +242,7 @@ header{
 }
 .icons_list p{
     font-family:'Bebas Neue', sans-serif;
-    font-size:18px ;
+    font-size:1.2rem ;
     color:rgb(11, 107, 162);
     margin: 0;
     margin-bottom: 5px;
@@ -256,7 +260,7 @@ header{
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     text-align: start;
-    height: 60vh;
+    height: 40vh; /* a modifier si besoin d'un footer */
     margin-left: 5vw;
 }
 .name_mail{
@@ -269,7 +273,9 @@ header{
     align-items: start; 
     width: 38.75rem;
 }
-
+#mail{
+    margin-left: 0.5rem;
+}
 #name, #mail{
     width: 303px;
     margin-top: 0.5rem;
@@ -279,6 +285,7 @@ header{
 #msg{
     border: 0.5px solid rgba(128, 128, 128, 0.908);
     width: 100%;
+    resize: none;
 }
 #objet{
     height: 40px;
@@ -439,7 +446,7 @@ textarea{
         align-items: center;
     }
     .table_skills > div{
-        width: 300px;
+        width: 18.75rem;
         margin-left: 20px;    
     }
 
@@ -450,18 +457,25 @@ textarea{
         width: 50vw; 
     }
     #objet{
-        width: 300px;
+        width: 18.75rem;
+        margin-bottom: 0.5rem;
+    }
+    #objet:hover, #name:hover, #mail:hover, #msg:hover{
+        box-shadow: 1px 1px 5px #000000;
     }
     .order_contact{
         align-items:center;
     }
     textarea{
-        width: 300px;;
+        width: 18.75rem;
     }
     .name_mail{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #mail{
+        margin-left: 0;
     }
     .icons_list{
         display: flex;
@@ -477,6 +491,6 @@ textarea{
         align-items: center;
     }
     .form_msg{
-        width: 19.25rem;
+        width: 18.75rem;
     }
     }
