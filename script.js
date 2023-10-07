@@ -6,7 +6,7 @@ responsiveBtn.addEventListener('click', () =>
   verticalNav.style.display = 'block',
   verticalNav.style.transition ="2s",
 );
-// script pour écrire visuellement sur  la class "text_typing" 
+// Ecouteur d'evenement pour écrire visuellement sur  la class "text_typing" 
 //selectionner le text
 
 const typingElement = document.querySelector('.typing_selection');
@@ -14,6 +14,12 @@ const textToType = "Développeur web front-end";
 let index = 0;
 
 // Ajoutez la variable actuelle au contenu de la balise avec timer<span>
+/**
+ * @param {string} textToType chaine de caractere à faire apparaitre
+ * @param {HTMLElement}typingElement selecteur dans lequel la chaine de caractère apparaitra
+ * @param {number} typingInterval intervalle de temps entre chaque partie de la string
+ * @param {number} index nombre qui défini la position de l'index du caractere qui apparaitra
+ */
 function typeText() {
   if (index < textToType.length) {
     setTimeout(() => {
@@ -26,9 +32,6 @@ function typeText() {
 }
 // Appelez la fonction pour commencer l'effet d'écriture
 const typingInterval = setInterval(typeText, 50);
-
-
-
 // // INTERSECTION OBSERVER     
 //     const ratio = 0.5;
 // const options = {

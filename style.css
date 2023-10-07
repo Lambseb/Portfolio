@@ -351,6 +351,11 @@ header{
 .textual_description{
     margin-left: initial;
 }
+.textual_description p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 0;
+}
 #objet{
     width: 100%
 }
@@ -427,8 +432,11 @@ textarea{
     }
     .textual_description{
         margin-left: initial;
-    
-
+    }
+    .textual_description p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: 0;
     }
     .title_skill{
         font-weight: bold;
@@ -448,10 +456,6 @@ textarea{
     .table_skills > div{
         width: 18.75rem;
         margin-left: 20px;    
-    }
-
-    .portfolio{
-        margin-top: 40vh;
     }
     .progress_bar{
         width: 50vw; 
@@ -492,5 +496,8 @@ textarea{
     }
     .form_msg{
         width: 18.75rem;
+    }
+    .button_form{
+        margin-bottom: 1rem;
     }
     }
