@@ -22,10 +22,11 @@ header {
   margin: 0;
   height: 100vh;
   width: 100%;
-  background-image: url(./img/rem_pics.jpg);
+  background-image: url(./assets/rem_pics.jpg);
   background-repeat: no-repeat;
   background-position: 60vw;
   background-size: 60vh 100vh;
+
   box-shadow: 0 1px rgba(8, 80, 189, 0.37); /* bottom border shadow header */
 }
 .btn_responsive_bar {
@@ -93,6 +94,7 @@ header {
   list-style-type: none;
   display: flex;
   padding-left: 0;
+  flex-wrap: wrap;
 }
 .list_style li:not(:first-child) {
   margin-left: 30px;
@@ -311,6 +313,9 @@ header {
   .list_menu {
     display: none;
   }
+  .list_style svg {
+    width: 3rem;
+  }
   .btn_responsive_bar {
     display: block;
   }
@@ -419,6 +424,10 @@ header {
   }
   .list_menu * {
     align-items: center;
+  }
+  .list_style svg {
+    width: 2rem;
+    height: 2rem;
   }
   .btn_responsive_bar {
     display: block;
